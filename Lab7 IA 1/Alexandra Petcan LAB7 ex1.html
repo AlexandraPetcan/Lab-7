@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pagina de prezentare 
+        </title>
+        <link rel="stylesheet" href="Style.css">
+        <script>
+            function viitor(){
+                document.getElementById("Nume").innerHTML = "Alexandra Petcan";
+                document.getElementById("poza").src = "Alex.jpeg";
+                document.getElementById("poza").style.width = " 100px";
+                document.getElementById("poza").style.opacity = "50%";
+                document.getElementById("poza").style.border = "10px";
+                document.body.style.backgroundColor = " lightblue";
+                document.getElementById("div").style.backgroundColor = " lightblue";
+                document.getElementById("p").style.fontFamily = "Lucida Console, Courier, monospace";
+                
+                var tabel = document.getElementById("tabel");
+                tabel.rows[0].cells[0].innerHTML = "ONCR";
+                tabel.rows[0].cells[1].innerHTML = " Lider";
+                tabel.rows[2].cells[1].innerHTML = "Cluj-Napoca";
+                tabel.rows[2].cells[1].innerHTML = "Responsabila de ceilalti ";
+                tabel.rows[3].cells[0].innerHTML = "Camp-uri internationale";
+                tabel.rows[3].cells[1].innerHTML = " Anul II"; 
+        
+            }
+
+            function Varsta(){
+                    var azi = new Date;
+                    var varstainani;
+
+                    var anNastere = document.getElementById("ani").innerHTML;
+                    var ancurent = azi.getFullYear();
+
+                    varstainani = ancurent - anNastere;
+
+                    document.getElementById("ani").innerHTML = varstainani;
+
+            }
+            </script>
+
+
+        
+    </head>
+    
+    <body>
+        <div id="div">
+
+        
+           <h2 id="Nume">Alexandra Petcan</h2>
+
+             <p onmouseover="Varsta" id="ani" >2001</p>
+        
+       
+        <img id="poza" src="Alexandra.jpg">
+        <p>
+            <b>Data nașterii: </b> 26/09/2001
+        </p>
+
+        
+        <p id="p">
+            <b>Adresa de email: </b>  alex260976@yahoo.com
+        </p>
+        <p id="p">
+            <b>Număr de telefon: </b>  0756xxxxxx
+        </p>
+        
+        <p id="p">
+            
+           <b id="p" >Citat:</b> „Radacinile educatiei sunt amare, dar fructul este dulce.”(Aristotel)
+        </p>
+
+        <table id="tabel">
+            <tr>
+                <td>
+                    Algebra liniara
+                </td>
+                <td>
+                    <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/02.pdf">https://etti.utcluj.ro/files/FiseDisciplina/EaRo/02.pdf</a>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>
+                    Informatica aplicata
+                </td>
+                <td>
+                    <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf">https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Elemente de fizica
+                </td>
+                <td>
+                    <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/03.pdf">https://etti.utcluj.ro/files/FiseDisciplina/EaRo/03.pdf</a>
+                </td>
+                
+
+            </tr>
+
+
+        </table>
+
+        <ul>
+           
+                <h4>
+                    Hobby-uri
+                </h4>
+            
+            <li>
+                Anime-uri
+            </li>
+            <li>
+                Muzica
+            </li>
+            <li>
+                Jocurile pe calculator
+            </li>
+        </ul>
+
+    </div>
+    <br>
+    
+        <button type="button" onclick="viitor()">
+            VeziViitor
+        </button>
+   
+   
+    
+    </body>
+
+</html>
